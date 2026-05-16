@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen - Future of Web Design</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="glass-nav">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-code"></i> NEX<span>GEN</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#features" class="nav-item">Features</a></li>
+            <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="container hero-content reveal">
+            <div class="badge">Internship Task 01</div>
+            <h1>Crafting Digital <span class="highlight">Experiences</span></h1>
+            <p>Elevating brands through interactive and responsive web design. Scroll down to witness the dynamic navigation and scroll-reveal interactions.</p>
+            <div class="hero-buttons">
+                <a href="#features" class="btn primary-btn"><span>Explore Features</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#portfolio" class="btn secondary-btn">View Work</a>
+            </div>
+        </div>
+        <a href="#features" class="scroll-indicator">
+            <div class="mouse"></div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Why Choose <span class="highlight">Us</span></h2>
+                <p>We blend aesthetics with performance.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="glass-card reveal">
+                    <div class="icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Flawless execution across all devices, ensuring an optimal user experience everywhere.</p>
+                </div>
+                <div class="glass-card reveal delay-1">
+                    <div class="icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Interactive UI</h3>
+                    <p>Engaging hover states, smooth transitions, and dynamic components that wow users.</p>
+                </div>
+                <div class="glass-card reveal delay-2">
+                    <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance and clean code structure for rapid loading times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Demo Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Creative <span class="highlight">Showcase</span></h2>
+                <p>A glimpse of premium aesthetics.</p>
+            </div>
+            <div class="showcase-box reveal">
+                <div class="mockup-frame">
+                    <div class="mockup-content">
+                        <!-- CSS Art / Gradient representation -->
+                        <div class="abstract-art"></div>
+                    </div>
+                </div>
+                <div class="showcase-text">
+                    <h3>Glassmorphism UI</h3>
+                    <p>Modern web styling featuring frosted glass effects, floating elements, and vibrant gradient backdrops. Perfect for tech and fashion brands.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check text-gradient"></i> CSS Backdrop Filters</li>
+                        <li><i class="fa-solid fa-check text-gradient"></i> Advanced Animations</li>
+                        <li><i class="fa-solid fa-check text-gradient"></i> Custom Variables</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container reveal">
+            <div class="contact-box glass-card">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's turn your vision into an interactive reality.</p>
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Your Email</label>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn"><span>Send Message</span> <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <i class="fa-solid fa-code"></i> NEX<span>GEN</span>
+            </div>
+            <p>Task 01 - Internship Submission. Crafted with <i class="fa-solid fa-heart" style="color: #ff3366;"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
